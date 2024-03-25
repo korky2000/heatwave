@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'heatwave';
+            src: url('heatwave.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            font-family: 'heatwave', Arial, sans-serif; /* Use the custom font */
+        }
+
+        .navbar {
+            background-color: #041e42; /* Blue color */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center; /* Center align text */
+            color: white;
+        }
+
+            .navbar ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar li {
+                display: inline;
+            }
+
+                .navbar li a {
+                    display: inline-block;
+                    padding: 20px;
+                    color: white; /* White color */
+                    text-decoration: none;
+                    transition: color 0.3s ease; /* Smooth color transition */
+                }
+
+                    .navbar li a:hover {
+                        color: #ffc107; /* Yellow color on hover */
+                    }
+
+        .header {
+            background-color: #fad817; /* Updated header color */
+            background-image: url('https://media.licdn.com/dms/image/C561BAQHM4HcMGvQBIw/company-background_10000/0/1615468614694/tampabayrowdies_cover?e=2147483647&v=beta&t=IuabMaCnXWjF0LaSIJHQOtJVoPoRPl0_zYCiIciIFcg');
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjusted height */
+            position: relative;
+            text-align: center; /* Center align text */
+            color: white; /* White color for text */
+            margin-top: 50px; /* Added margin */
+        }
+
+        .header-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            background-image: url('heatwavetrans.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 400px; /* Set width to 400px */
+            height: 400px; /* Set height to 400px */
+            background-position: center center; /* Center the background image */
+        }
+
+        .site-title {
+            font-size: 72px;
+            margin-top: 10px;
+        }
+
+        .content {
+            margin-top: 500px; /* Adjust according to the height of the header */
+            padding: 20px;
+            color: #333; /* Dark gray color for content text */
+        }
+
+        .content-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .content-box {
+            flex: 1;
+            background-color: #ffc107;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .content-box h3 {
+                margin-top: 0;
+            }
+
+        .content-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .content-box img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-bottom: 10px; /* Optional: Add some space between the image and text */
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-overlay">
+            <div class="logo"></div>
+            <h1 class="site-title">The Heatwave</h1>
+            <h4>Established 2024</h4>
+
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <!-- Navigation links go here -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Hymnal</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-boxes">
+        <div class="content-box">
+            <h3>News 1</h3>
+            <img src="https://www.shutterstock.com/shutterstock/photos/1424182253/display_1500/stock-photo-happy-female-soccer-players-on-a-professional-soccer-stadium-girls-team-emotionally-celebrates-1424182253.jpg" alt="Image 1">
+            <p>This is the content of box 1.</p>
+        </div>
+        <div class="content-box">
+            <h3>News 2</h3>
+            <img src="https://t4.ftcdn.net/jpg/02/52/66/07/360_F_252660743_YMkNMZBmaMXsTOg4r28xeSAgppCpObOm.jpg" alt="Image 2">
+            <p>This is the content of box 2.</p>
+        </div>
+        <div class="content-box">
+            <h3>News 3</h3>
+            <img src="https://thumbs.dreamstime.com/b/brazilian-women-s-soccer-team-rio-de-janeiro-brazil-brazilian-women-s-soccer-team-against-women-s-team-sweden-149639961.jpg" alt="Image 3">
+            <p>This is the content of box 3.</p>
+        </div>
+    </div>
+
+</body>
+</html>
