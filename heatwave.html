@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -126,6 +126,26 @@
                 border-radius: 5px;
                 margin-bottom: 10px; /* Optional: Add some space between the image and text */
             }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px; /* Adjust the border-radius to make it rounded */
+            background-color: #041e42; /* Default button color */
+        }
+
+            .button a {
+                text-decoration: none;
+                color: white; /* Button text color */
+            }
+
+            .button:hover {
+                background-color: #e32883; /* Change button color on hover */
+            }
     </style>
 </head>
 <body>
@@ -141,12 +161,12 @@
     <nav class="navbar">
         <!-- Navigation links go here -->
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Hymnal</a></li>
-            <li><a href="#">Code of Conduct</a></li>
-            <li><a href="#">Memberships</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="heatwave.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hymnal.html">Hymnal</a></li>
+            <li><a href="codeofconduct.html">Code of Conduct</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -154,18 +174,27 @@
         <div class="content-box">
             <h3>News 1</h3>
             <img src="https://www.shutterstock.com/shutterstock/photos/1424182253/display_1500/stock-photo-happy-female-soccer-players-on-a-professional-soccer-stadium-girls-team-emotionally-celebrates-1424182253.jpg" alt="Image 1">
-            <p>This is the content of box 1.</p>
-        </div>
+            <div class="button-container">
+                <div class="button">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>        </div>
         <div class="content-box">
             <h3>News 2</h3>
             <img src="https://t4.ftcdn.net/jpg/02/52/66/07/360_F_252660743_YMkNMZBmaMXsTOg4r28xeSAgppCpObOm.jpg" alt="Image 2">
-            <p>This is the content of box 2.</p>
-        </div>
+            <div class="button-container">
+                <div class="button">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>        </div>
         <div class="content-box">
             <h3>News 3</h3>
             <img src="https://thumbs.dreamstime.com/b/brazilian-women-s-soccer-team-rio-de-janeiro-brazil-brazilian-women-s-soccer-team-against-women-s-team-sweden-149639961.jpg" alt="Image 3">
-            <p>This is the content of box 3.</p>
-        </div>
+            <div class="button-container">
+                <div class="button">
+                    <a href="#">Learn More</a>
+                </div>
+            </div>        </div>
     </div>
 
 </body>
